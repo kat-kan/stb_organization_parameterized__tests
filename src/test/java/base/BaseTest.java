@@ -15,7 +15,7 @@ public class BaseTest {
     protected static RequestSpecification reqSpecification;
 
     @BeforeAll
-    public static void beforeAll(){
+    public static void beforeAll() {
 
         reqSpecification = new RequestSpecBuilder()
                 .addQueryParam("key", KEY)
