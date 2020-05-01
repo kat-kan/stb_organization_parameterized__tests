@@ -7,19 +7,22 @@ import org.junit.jupiter.api.BeforeAll;
 
 public class BaseTest {
 
-    protected static final String KEY = "YOUR KEY";
-    protected static final String TOKEN = "YOUR TOKEN";
     protected static final String BASE_URL = "https://api.trello.com/1/";
     protected static final String ORGANIZATIONS = "organizations";
 
+    protected static String key;
+    protected static String token;
     protected static RequestSpecification reqSpecification;
 
     @BeforeAll
     public static void beforeAll() {
 
+        key = System.getProperty("key");
+        token = System.getProperty("token");
+
         reqSpecification = new RequestSpecBuilder()
-                .addQueryParam("key", KEY)
-                .addQueryParam("token", TOKEN)
+                .addQueryParam("key", key)
+                .addQueryParam("token", token)
                 .setContentType(ContentType.JSON)
                 .build();
     }
