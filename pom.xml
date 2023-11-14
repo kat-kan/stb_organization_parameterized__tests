@@ -15,7 +15,7 @@
         <io.rest-assured.version>4.1.1</io.rest-assured.version>
         <org.junit.jupiter.version>5.5.2</org.junit.jupiter.version>
         <org.hamcrest.version>2.2</org.hamcrest.version>
-        <org.json.version>20230227</org.json.version>
+        <org.json.version>20231013</org.json.version>
         <com.github.javafaker.version>1.0.1</com.github.javafaker.version>
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <junit-platform-surefire-provider.version>1.1.0</junit-platform-surefire-provider.version>
